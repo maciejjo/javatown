@@ -18,7 +18,6 @@ public class Policeman extends Human implements IWearingUniform, IPoliceOfficer 
     return PoliceBadge;
   }
 
-
 }
 
 

@@ -1,6 +1,7 @@
 import java.util.Random;
 
-public class Human {
+public class Human implements IPoliceOfficer, ILicensedBuilder, IWearingUniform {
+
   final private String Name;
   final private double MaxSpeed;
   
@@ -8,6 +9,7 @@ public class Human {
   private double Alpha;
 
   public Human(String NewName) {
+
     Name = NewName;
     
     Random rn = new Random();
@@ -15,9 +17,25 @@ public class Human {
     Y = rn.nextInt(240);
     MaxSpeed = rn.nextInt(20) + 1;
     Alpha = rn.nextInt(360);
+
   }
 
   public void Move() {
+  }
+
+  @Override
+  public Uniform ShowUniform() {
+    return null;
+  }
+
+  @Override
+  public Badge ShowBadge() {
+    return null;
+  }
+
+  @Override
+  public Permission ShowPermission() {
+    return null;
   }
 
 }
